@@ -37,7 +37,7 @@ const queue = new Map();
  
  
  
-var prefix = "M" 
+var prefix = "C" 
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
    
@@ -229,8 +229,8 @@ function play(guild, song) {
     serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
  
-const adminprefix = "M";
-const devs = ['505173955464790026'];
+const adminprefix = "C";
+const devs = ['415133149673029632'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
